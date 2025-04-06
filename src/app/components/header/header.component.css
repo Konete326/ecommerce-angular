@@ -1,0 +1,60 @@
+
+  .navbar {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .nav-link {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  .navbar-toggler {
+    border-color: #007bff;
+  }
+  .navbar-toggler-icon {
+    background-color: #007bff;
+  }
+  .login-icon {
+    font-size: 1.3rem;
+  }
+  .nav-item {
+    position: relative;
+  }
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+
+  /* Animation for navbar */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .navbar-nav {
+    animation: slideIn 0.6s ease-out;
+  }

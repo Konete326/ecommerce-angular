@@ -1,0 +1,62 @@
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    padding: 32px 16px; /* Padding for top and bottom */
+}
+
+footer .container {
+    max-width: 1200px; /* Max width for the footer */
+    margin: 0 auto; /* Center the footer */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+    gap: 32px; /* Space between columns */
+}
+
+footer h3 {
+    font-size: 1.25rem; /* Font size for headings */
+    font-weight: bold; /* Bold headings */
+    margin-bottom: 16px; /* Space below headings */
+}
+
+footer ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+footer li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+footer a {
+    color: #b0b0b0; /* Light gray color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 640px) {
+    footer .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+    }
+}
+
+/* Bottom Text Centering */
+footer .text-center {
+    text-align: center; /* Center text */
+    margin-top: 32px; /* Space above */
+}
+
+footer .text-gray-500 {
+    color: #b0b0b0; /* Light gray color for footer text */
+}
